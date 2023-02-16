@@ -7,4 +7,4 @@
 Пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.
 
 Запуск игры: "brain-even"
-https://asciinema.org/a/hzWzReTsprOW7EB3eI4MF67y
+https://asciinema.org/a/hzWzReTsprOW7EB3eI4MF67yq
