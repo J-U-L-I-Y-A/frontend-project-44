@@ -1,5 +1,4 @@
 #!/usr/bin/env node
+import logic from '../src/Games/even.js';
 
-import getEvenNumberAndRun from '../src/even.js';
-
-getEvenNumberAndRun();
+logic();
