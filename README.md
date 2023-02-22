@@ -17,3 +17,10 @@ https://asciinema.org/a/hzWzReTsprOW7EB3eI4MF67yq
 Запуск игры: "make brain-calc"
 https://asciinema.org/a/VJAnhZbbGYwLkw1RQkLaNGEhW
 
+Игра: "НОД"
+Описание игры:
+пользователю показывается два случайных числа, например, 25 50. 
+Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+
+https://asciinema.org/a/Aua8MfblbZAQ3CgwKsEGWlPkT
+
