@@ -4,8 +4,10 @@ import logic from '../index.js';
 const getQuestionString = 'Find the greatest common divisor of given numbers.';
 
 const nod = () => {
-  let num1 = getRandomNumber();
-  let num2 = getRandomNumber();
+  const minNum = 0;
+  const maxNum = 50;
+  let num1 = getRandomNumber(minNum, maxNum);
+  let num2 = getRandomNumber(minNum, maxNum);
 
   const expression = `${num1} ${num2}`;
 
