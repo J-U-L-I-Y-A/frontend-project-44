@@ -33,4 +33,10 @@ https://asciinema.org/a/Aua8MfblbZAQ3CgwKsEGWlPkT
 Запуск игры: "make brain-progression"
 https://asciinema.org/a/TYtnnODVKGGp7ziuXQuj8s6UB
 
+Игра: "Простое ли число?"
+Описание игры:
+игроку показывается случайное число. Если число "простое" ему нужно ответить "yes",  если нет - "no".
+https://asciinema.org/a/HHsiPjWkK4b4KmSc3TUtDySv7
+
+
 
