@@ -24,7 +24,7 @@ npm ci
 ```
 make brain-even
 ```
-[![asciicast]https://asciinema.org/a/hzWzReTsprOW7EB3eI4MF67yq
+[![asciicast](https://asciinema.org/a/hzWzReTsprOW7EB3eI4MF67yq)
 
 ## Игра: "Калькулятор"
 Описание игры: 
@@ -35,7 +35,7 @@ make brain-even
 ```
 make brain-calc
 ```
-[![asciicast]https://asciinema.org/a/VJAnhZbbGYwLkw1RQkLaNGEhW
+[![asciicast](https://asciinema.org/a/VJAnhZbbGYwLkw1RQkLaNGEhW)
 
 ## Игра: "НОД"
 Описание игры:
@@ -46,7 +46,7 @@ make brain-calc
 ```
 make brain-gcd
 ```
-[![asciicast]https://asciinema.org/a/Aua8MfblbZAQ3CgwKsEGWlPkT
+[![asciicast](https://asciinema.org/a/Aua8MfblbZAQ3CgwKsEGWlPkT)
 
 ## Игра: "Арифметическая прогрессия"
 Описание игры:
@@ -57,7 +57,7 @@ make brain-gcd
 ```
 make brain-progression
 ```
-[![asciicast]https://asciinema.org/a/TYtnnODVKGGp7ziuXQuj8s6UB
+[![asciicast](https://asciinema.org/a/TYtnnODVKGGp7ziuXQuj8s6UB)
 
 ## Игра: "Простое ли число?"
 Описание игры:
@@ -66,7 +66,7 @@ make brain-progression
 ```
 make brain-prime
 ```
-[![asciicast]https://asciinema.org/a/HHsiPjWkK4b4KmSc3TUtDySv7
+[![asciicast](https://asciinema.org/a/HHsiPjWkK4b4KmSc3TUtDySv7)
 
 
 
