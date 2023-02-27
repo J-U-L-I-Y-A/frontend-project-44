@@ -7,7 +7,7 @@ const getQuestionString = 'Answer "yes" if given number is prime. Otherwise answ
 const minNum = 0;
 const maxNum = 100;
 
-const testPrime = (num) => {
+const isPrime = (num) => {
   if (num <= 1) {
     return false;
   }
@@ -26,7 +26,7 @@ const testPrime = (num) => {
 const runPrime = () => {
   const num = getRandomNumber(minNum, maxNum);
   const question = num.toString();
-  const correctAnswer = testPrime(num) ? 'yes' : 'no';
+  const correctAnswer = isPrime(num) ? 'yes' : 'no';
 
   return [question, correctAnswer];
 };
