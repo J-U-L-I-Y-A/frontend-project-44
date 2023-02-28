@@ -1,29 +1,31 @@
-import getRandomNumber from '../getRandomNumber.js';
+import getRandomNumber from '../helpers.js';
 import logic from '../index.js';
 
 const getQuestionString = 'Find the greatest common divisor of given numbers.';
 
-const nod = () => {
-  const minNum = 0;
-  const maxNum = 50;
-  let num1 = getRandomNumber(minNum, maxNum);
-  let num2 = getRandomNumber(minNum, maxNum);
+const num1 = getRandomNumber();
+const num2 = getRandomNumber();
 
-  const expression = `${num1} ${num2}`;
-
-  while (num1 !== 0 && num2 !== 0) {
-    if (num1 > num2) {
-      num1 %= num2;
+const getGCD = (numX, numY) => {
+  let x = numX;
+  let y = numY;
+  while (x !== 0 && y !== 0) {
+    if (x > y) {
+      x %= y;
     } else {
-      num2 %= num1;
+      y %= x;
     }
   }
-  const sum = num1 + num2;
-  const correctAnswer = sum.toString();
+  return x + y;
+};
+
+const getQuestionAndCorrectAnswer = () => {
+  const expression = `${num1} ${num2}`;
+  const correctAnswer = getGCD(num1, num2).toString();
 
   return [expression, correctAnswer];
 };
 
 export default () => {
-  logic(getQuestionString, nod);
+  logic(getQuestionString, getQuestionAndCorrectAnswer);
 };

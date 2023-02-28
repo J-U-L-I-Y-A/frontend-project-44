@@ -1,4 +1,4 @@
-import getRandomNumber from '../getRandomNumber.js';
+import getRandomNumber from '../helpers.js';
 import logic from '../index.js';
 
 const getQuestionString = 'What number is missing in the progression?';
@@ -24,7 +24,7 @@ const length = getRandomNumber(minLength, maxLength);
 const startNumber = getRandomNumber(minNum, maxNum);
 const step = getRandomNumber(minStep, maxStep);
 
-const runProgression = () => {
+const getQuestionAndCorrectAnswer = () => {
   const arrayProgression = getRandomProgression(length, startNumber, step);
   const hiddenNumber = getRandomItem(arrayProgression);
   const correctAnswer = arrayProgression[hiddenNumber].toString();
@@ -34,5 +34,5 @@ const runProgression = () => {
 };
 
 export default () => {
-  logic(getQuestionString, runProgression);
+  logic(getQuestionString, getQuestionAndCorrectAnswer);
 };
