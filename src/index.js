@@ -7,7 +7,6 @@ export default (getQuestionString, generateRound) => {
   console.log(`Hello, ${userName}!`);
   console.log(getQuestionString);
 
-  let sumWriteAnswer = 0;
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, writeAnswer] = generateRound();
 
@@ -15,15 +14,14 @@ export default (getQuestionString, generateRound) => {
     const usersAnswer = readlineSync.question('Your answer: ');
 
     if (writeAnswer === usersAnswer) {
-      sumWriteAnswer += 1;
       console.log('Correct!');
     } else {
       console.log(`'${usersAnswer}' is wrong answer ;(. Correct answer was '${writeAnswer}'.
       \nLet's try again, ${userName}!`);
       break;
     }
-  }
-  if (sumWriteAnswer === roundsCount) {
-    console.log(`Congratulations, ${userName}!`);
+    if ((i + 1) === roundsCount) {
+      console.log(`Congratulations, ${userName}!`);
+    }
   }
 };
