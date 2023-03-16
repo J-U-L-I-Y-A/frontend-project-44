@@ -1,7 +1,7 @@
 import getRandomNumber from '../helpers.js';
-import logic from '../index.js';
+import startGame from '../index.js';
 
-const getQuestionString = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const getRandomItem = (items) => Math.floor(Math.random() * items.length);
 
@@ -12,7 +12,7 @@ const maxStep = 10;
 const minNum = 1;
 const maxNum = 100;
 
-const getRandomProgression = (length, startNumber, step) => {
+const getProgression = (length, startNumber, step) => {
   const arrayProgression = [];
   for (let i = startNumber; arrayProgression.length < length; i += step) {
     arrayProgression.push(i);
@@ -25,7 +25,7 @@ const startNumber = getRandomNumber(minNum, maxNum);
 const step = getRandomNumber(minStep, maxStep);
 
 const getQuestionAndCorrectAnswer = () => {
-  const arrayProgression = getRandomProgression(length, startNumber, step);
+  const arrayProgression = getProgression(length, startNumber, step);
   const hiddenNumber = getRandomItem(arrayProgression);
   const correctAnswer = arrayProgression[hiddenNumber].toString();
   arrayProgression[hiddenNumber] = '..';
@@ -34,5 +34,5 @@ const getQuestionAndCorrectAnswer = () => {
 };
 
 export default () => {
-  logic(getQuestionString, getQuestionAndCorrectAnswer);
+  startGame(description, getQuestionAndCorrectAnswer);
 };

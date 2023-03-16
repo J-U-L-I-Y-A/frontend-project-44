@@ -1,7 +1,7 @@
 import getRandomNumber from '../helpers.js';
-import logic from '../index.js';
+import startGame from '../index.js';
 
-const getQuestionString = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const minNum = 0;
 const maxNum = 100;
@@ -31,5 +31,5 @@ const runPrime = () => {
 };
 
 export default () => {
-  logic(getQuestionString, runPrime);
+  startGame(description, runPrime);
 };

@@ -1,25 +1,20 @@
 import getRandomNumber from '../helpers.js';
-import logic from '../index.js';
+import startGame from '../index.js';
 
-const getQuestionString = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const mathSymbols = ['+', '-', '*'];
 const calculate = (x, y, mathSymbol) => {
-  let result;
   switch (mathSymbol) {
     case '+':
-      result = x + y;
-      break;
+      return x + y;
     case '-':
-      result = x - y;
-      break;
+      return x - y;
     case '*':
-      result = x * y;
-      break;
+      return x * y;
     default:
       throw new Error(`There is no such operator like '${mathSymbol}'!`);
   }
-  return result;
 };
 
 const getExampleAndCorrectAnswer = () => {
@@ -33,5 +28,5 @@ const getExampleAndCorrectAnswer = () => {
 };
 
 export default () => {
-  logic(getQuestionString, getExampleAndCorrectAnswer);
+  startGame(description, getExampleAndCorrectAnswer);
 };
